@@ -69,35 +69,43 @@
 
 .search-bar {
     display: flex;
-    background-color: #fefefe;
     justify-content: space-around;
+    
+    background-color: #fefefe;
 
     &__logo-container { /* .search-bar__logo-container */
-        width: 10rem;
-        height: 3.75rem;
         display: flex;
         justify-content: center;
+
+        width: 10rem;
+        height: 3.75rem;
     }
 
     &__form-container { /* .search-bar__form-container */
-        padding: 1rem;
-
         display: flex;
-        flex-basis: 100%;
         justify-content: center;
-
+        flex-basis: 100%;
+        
+        padding: 1rem;
+        gap: 2px;
     }
 
     &__form-label {
-        background-color: greenyellow;
+        width: 0;
+        visibility: hidden;
     }
-
+    
     &__form-search {
-        background-color: deeppink;
+        border-radius: 5px;
+        width: 60%;
     }
-
+    
     &__form-submit {
-        background-color: darkslategray;
+        font-weight: bold;
+
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     &__carrito-container {

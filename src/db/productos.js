@@ -1,31 +1,27 @@
 const productos = [
     {
         id: 1,
-        nombre: "iPhone 11 Pro Max",
-        foto: "imgs/apple-iphone-11-pro-max.jpg",
-        descripcion: "iPhone 11 super pro max",
-        precio: 222.20
+        nombre: "Alhajero",
+        foto: "public/imgs/alhajero.webp",
+        descripcion: "Alhajero decorativo pequeño, ideal para guardar, caravanas, anillos o cualquier joya. Elaborado artesanalmente con cerámica y yeso, combinando funcionalidad y estética"
     },
     {
         id: 2,
-        nombre: "iPhone 12",
-        foto: "imgs/apple-iphone-12.jpg",
-        descripcion: "iPhone 12, flojito",
-        precio: 333.30
+        nombre: "Estrella de mar",
+        foto: "public/imgs/estrella-mar.webp",
+        descripcion: "Nuestra estrella de mar es una figura decorativa artesanal, inspirada en la naturaleza marina, elaborada con cerámica y yeso, ideal para adornar espacios con un estilo náutico."
     },
     {
         id: 3,
-        nombre: "Camara Canon",
-        foto: "imgs/camara-canon.jpg",
-        descripcion: "Camara ultra 4k",
-        precio: 444.40
+        nombre: "Huevera",
+        foto: "public/imgs/huevera.webp",
+        descripcion: "La clásica huevera, un utensilio artesanal diseñado para sostener y organizar huevos, elaborado con cerámica y yeso, combinando funcionalidad y estética en la cocina o decoración."
     },
     {
         id: 4,
-        nombre: "Drone DJI",
-        foto: "imgs/drone-dji.jpg",
-        descripcion: "Alto drone",
-        precio: 555.50
+        nombre: "Porta vasos",
+        foto: "public/imgs/porta-vasos.webp",
+        descripcion: "Decorativo y funcional, diseñado para proteger superficies, elaborado artesanalmente con cerámica y yeso, aportando estilo y originalidad a cualquier espacio."
     }
 ]
 

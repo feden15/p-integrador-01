@@ -26,13 +26,6 @@ const productos = [
         foto: "imgs/drone-dji.jpg",
         descripcion: "Alto drone",
         precio: 555.50
-    },
-    {
-        id: 5,
-        nombre: "Auriculares Sony",
-        foto: "imgs/auriculares-sony.jpg",
-        descripcion: "Cancelación activa!",
-        precio: 666.60
     }
 ]
 

@@ -80,8 +80,7 @@
         justify-content: center;
         align-items: center;
 
-        width: 5rem;
-        border: .5px solid red;
+        width: 10rem;
         height: 3.50rem;
     }
 
@@ -115,6 +114,9 @@
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -125,7 +127,6 @@
 .menu-toogle {
     display: block;
 
-    background-color: red;
     flex: 0 0 3rem;
     position: relative;
     cursor: pointer; /* manito */

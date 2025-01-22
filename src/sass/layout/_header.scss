@@ -29,7 +29,6 @@
 
 .nav-bar {
     display: none; /* se oculta el menú */
-    order: 2;
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
@@ -61,6 +60,7 @@
     @media screen and (min-width: 992px) {
         & {
             display: block; /* muestra el menú */
+            order: 1;
         }
     }
 }
@@ -70,7 +70,6 @@
 /* ----------------------------------------------- */
 
 .search-bar {
-    order: 1;
     display: flex;
     justify-content: space-around;
     
@@ -79,9 +78,11 @@
     &__logo-container { /* .search-bar__logo-container */
         display: flex;
         justify-content: center;
+        align-items: center;
 
-        width: 10rem;
-        height: 3.75rem;
+        width: 5rem;
+        border: .5px solid red;
+        height: 3.50rem;
     }
 
     &__form-container { /* .search-bar__form-container */
@@ -140,7 +141,7 @@
     &__bottom-bread { /* .menu-toogle__top-bread */
         displaY: block;
         background-color: #333;
-        height: .2rem;
+        height: .4rem;
         position: absolute;
         left: .5rem;
         right: .5rem;
@@ -152,7 +153,7 @@
 
     &__meat { /* Centrar sin usar flexbox */
         top: 50%; /* centrando verticalmente */
-        margin-top: -.1rem;
+        margin-top: -.2rem;
     }
 
     &__bottom-bread {

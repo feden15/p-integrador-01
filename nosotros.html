@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="imgs/L-en-rosado.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador - Nosotros</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <input type="checkbox" id="menu">
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
+          <li class="nav-bar__nav-item">
+            <a href="index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav> <!-- .nav-bar -->
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img src="imgs/logoLunarte.webp" alt="">
+        </div>
+        <h1>lunarte</h1>
+        <div class="search-bar__carrito-container">
+          <img src="imgs/logoCarrito.webp" alt="Logo carrito de compras">
+        </div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div> <!-- .menu-toogle -->
+      </div> <!-- .search-bar -->
+
+    </header>
+
+    <main>
+      <section class="section-cards">
+        <header class="section-cards__header">
+          <p>Se encontraron 4 productos</p>
+        </header>
+      </section>
+
+       <!-- section de las cards -->
+      <section class="cards-container" id="container-productos"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

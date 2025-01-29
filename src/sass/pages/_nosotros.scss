@@ -169,41 +169,25 @@ body {
     }
 }
 
-.form-container {
-    background: #bfa2bd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    color: #141414;
-}
-h2 {
-    text-align: center;
-}
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    font-weight: bold;
-    border: 1px solid #eee;
-    border-radius: 5px;
-}
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #7a757a;
-    color: #eee;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover {
-    background-color: #9e939d;
+/* ----------------------------------------------- */
+/* HISTORY LUNARTE                                 */
+/* ----------------------------------------------- */
+
+.lunarte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    float: right;
+
+    gap: 5px;
+    margin-top: 50px;
+
+    &__born {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
 }

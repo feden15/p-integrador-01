@@ -1,6 +1,7 @@
 import productos from './db/productos'
 import './sass/main.scss'
 
+
 const contenedorProductos = document.getElementById('container-productos')
 
 const start = () => {

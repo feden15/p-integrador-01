@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="imgs/L-en-rosado.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador - Contacto</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <input type="checkbox" id="menu">
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav> <!-- .nav-bar -->
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img src="imgs/logoLunarte.webp" alt="">
+          <h1>lunarte</h1>
+        </div>
+        <div class="search-bar__carrito-container">
+          <img src="imgs/logoCarrito.webp" alt="Logo carrito de compras">
+        </div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div> <!-- .menu-toogle -->
+      </div> <!-- .search-bar -->
+
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">        
+                <input type="email" id="email" name="email" placeholder="Correo electrónico">        
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="/src/contacto.js"></script>
+  </body>
+</html>

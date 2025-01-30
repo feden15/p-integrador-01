@@ -8,15 +8,41 @@
     // border: .5px solid red;
 }
 
+html {
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 100%; // default navegadores 16px
+
+    // width: 100vw;
+    // height: 100vh;
+    
+    & header {
+        margin-bottom: 50px;
+    }
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    // background-attachment: fixed;
+    background-image: url(imgs/logoLunarteCompleto.webp);
 }
+
+body::before {
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: (rgba(0, 0, 0, 0.3));
+    z-index: -1;
+  }
 
 /* ----------------------------------------------- */
 /* HEADER                                          */
 /* ----------------------------------------------- */
-/* MOBILE FIRST */
 
 .main-header {
     display: flex;
@@ -43,9 +69,9 @@ body {
 /* ----------------------------------------------- */
 
 .nav-bar {
-    display: none; /* se oculta el menú */
+    display: none;
 
-    &__nav-list { /* .nav-bar__nav-list */
+    &__nav-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -58,9 +84,10 @@ body {
         }
     }
 
-    &__nav-item { /* .nav-bar__nav-item */
+    &__nav-item {
         text-align: center;
         background-color: pink;
+        width: 100%;
     }
 
     &__nav-link {
@@ -69,19 +96,20 @@ body {
         color: #bfa2bd;
         font-weight: bold;
         background-color: #fefefe;
+        border: .5px solid #bfa2bd;
         width: 100%;
     }
 
     @media screen and (min-width: 992px) {
         & {
-            display: block; /* muestra el menú */
+            display: block;
             order: 1;
         }
     }
 }
 
 /* ----------------------------------------------- */
-/* SEARCH BAR                                          */
+/* SEARCH BAR                                      */
 /* ----------------------------------------------- */
 
 .search-bar {
@@ -130,17 +158,17 @@ body {
 
     flex: 0 0 3rem;
     position: relative;
-    cursor: pointer; /* manito */
+    cursor: pointer;
 
-    &__label { /* .menu-toogle__label */
+    &__label {
         display: block;
         background-color: #fefefe;
         height: 100%;
     }
 
-    &__top-bread, /* .menu-toogle__top-bread */
-    &__meat, /* .menu-toogle__top-bread */
-    &__bottom-bread { /* .menu-toogle__top-bread */
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
         displaY: block;
         background-color: #bfa2bd;
         height: .5rem;
@@ -153,8 +181,8 @@ body {
         top: 1rem;
     }
 
-    &__meat { /* Centrar sin usar flexbox */
-        top: 50%; /* centrando verticalmente */
+    &__meat {
+        top: 50%;
         margin-top: -.25rem;
     }
 
@@ -164,46 +192,57 @@ body {
 
     @media screen and (min-width: 992px) {
         & {
-            display: none; /* oculta el menú */
+            display: none;
         }        
     }
 }
 
+/* ----------------------------------------------- */
+/* FORM CONTAINER                                  */
+/* ----------------------------------------------- */
+
 .form-container {
+    justify-self: center;
     background: #bfa2bd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 80%;
+    max-width: 500px;
     color: #141414;
-}
-h2 {
-    text-align: center;
-}
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    font-weight: bold;
-    border: 1px solid #eee;
-    border-radius: 5px;
-}
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #7a757a;
-    color: #eee;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover {
-    background-color: #9e939d;
+
+    & h2 {
+        text-align: center;
+    }
+
+    & label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    & input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        font-weight: bold;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    & button {
+        width: 100%;
+        padding: 10px;
+        background-color: #7a757a;
+        color: #eee;
+        border: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    & button:hover {
+        background-color: #9e939d;
+    }
 }

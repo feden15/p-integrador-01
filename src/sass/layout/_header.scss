@@ -46,6 +46,7 @@
     &__nav-item { /* .nav-bar__nav-item */
         text-align: center;
         background-color: pink;
+        width: 100%;
     }
 
     &__nav-link {
@@ -54,7 +55,6 @@
         color: #bfa2bd;
         font-weight: bold;
         background-color: #fefefe;
-        width: 100%;
     }
 
     @media screen and (min-width: 992px) {

@@ -1,13 +1,13 @@
 .section-cards {
     display: flex;
     font-size: small;
-    background-color: #fefefe;
+    background: none;
     
     &__header {
         width: 100%;
     }
     
-    &__header h1, p {
+    &__header h1 {
         justify-self: center;
     }
 
@@ -16,8 +16,8 @@
         font-family: "Charm", serif;
         font-weight: bold;
         font-size: 60px;
-        letter-spacing: 5px;
-        color: #bfa2bd;
+        letter-spacing: 10px;
+        color: #ffffff;
     }
 }
 

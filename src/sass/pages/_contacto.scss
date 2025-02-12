@@ -11,15 +11,19 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 100%; // default navegadores 16px
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     
     & header {
         margin-bottom: 50px;
     }
 
+    background-image: url(imgs/logoLunarteCompleto.webp);
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
-    background-image: url(imgs/logoLunarteCompleto.webp);
 }
 
 body::before {
@@ -191,6 +195,10 @@ body::before {
     }
 }
 
+main {
+    flex: 1; // Mandar footer al final
+}
+
 /* ----------------------------------------------- */
 /* FORM CONTAINER                                  */
 /* ----------------------------------------------- */
@@ -329,6 +337,7 @@ body::before {
 }
 
 footer {
+    font-size: 1.5rem;
     margin-top: 20px;
-    justify-self: center;
+    text-align: center;
 }

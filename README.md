@@ -1,3 +1,12 @@
+## Nombre: Federico Nova
+
+## URL GitHub: https://github.com/feden15/p-integrador-01
+
+## URL Netlify: https://p-integrador-01.netlify.app/
+
+<--------------------------------------------------->
+<--------------------------------------------------->
+
 # Creando el proyecto Vite para el integrador
 
 ```sh
@@ -23,6 +32,3 @@ npm i sass-embedded -D
 ```
 
 ## Agrego el archivo 'vite.config.js'
-
-
-

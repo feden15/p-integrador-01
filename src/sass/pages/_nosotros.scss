@@ -206,33 +206,50 @@ main {
 .inicio-container {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.8);
+
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+
+    &__texto {
+        width: 100%;
+
+        & h2 {
+
+            text-align: start;
+            color: #fefefe;
+        }
+    
+        & p {
+            color: #fefefe;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+
+        & img {
+
+            margin: 10px;
+
+            width: 90%;
+        }
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 100%
+            }
+        }
+    }
 
     @media screen and (min-width: 768px) {
         & {
             flex-direction: row;
-        }        
-    }
-
-}
-
-.texto-inicio {
-    width: 100%;
-}
-
-.img-inicio {
-    display: flex;
-    justify-content: center;
-
-    & img {
-
-        margin: 10px;
-
-        width: 40%;
-    }
-
-    @media screen and (min-width: 768px) {
-        & {
-            flex-direction: column;
         }        
     }
 

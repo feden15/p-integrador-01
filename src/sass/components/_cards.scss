@@ -7,24 +7,27 @@
         width: 100%;
     }
     
+    &__header p {
+        visibility: hidden;
+    }
+    
     &__header h1 {
         justify-self: center;
-    }
 
-    &__header h1 {
-        margin-bottom: 10px;
         font-family: "Charm", serif;
         font-weight: bold;
-        font-size: 60px;
+        font-size: 80px;
         letter-spacing: 10px;
         color: #ffffff;
+
+        margin-bottom: 10px;
     }
 }
 
 .card {
 
-    min-width: 400px;
-    max-width: 500px;
+    // min-width: 400px;
+    width: 90%;
     height: 200px;
 
     border-top-left-radius: 5px;

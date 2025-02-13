@@ -160,7 +160,6 @@ body::before {
 
     &__label {
         display: block;
-        background-color: #fefefe;
         height: 100%;
     }
 
@@ -219,9 +218,10 @@ main {
         width: 100%;
 
         & h2 {
-
             text-align: start;
             color: #fefefe;
+
+            margin-bottom: 10px;
         }
     
         & p {
@@ -232,6 +232,7 @@ main {
     &__img {
         display: flex;
         justify-content: center;
+        transition: transform 0.5s;
 
         & img {
 
@@ -242,8 +243,14 @@ main {
 
         @media screen and (min-width: 768px) {
             & {
-                width: 100%
+                width: 100%;
             }
+        }
+
+        @media screen and (min-width: 992px) {
+            &:hover img {
+                transform: scale(1.1);
+            }        
         }
     }
 
